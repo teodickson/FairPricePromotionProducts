@@ -22,7 +22,7 @@ public class BaseTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
-        driver.get("https://shopee.sg/");
+        driver.get("https://www.fairprice.com.sg/");
     }
 
     @AfterTest

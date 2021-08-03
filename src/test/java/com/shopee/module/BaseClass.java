@@ -9,9 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
+import static com.shopee.constant.Path.BASE_URL;
+
 public class BaseClass {
     public static WebDriver driver;
-    public static Logger log = Logger.getLogger("com.shopee.automation");
+    public static Logger log = Logger.getLogger("com.fairprice.automation");
 
     public BaseClass(WebDriver driver) {
         BaseClass.driver = driver;
@@ -43,6 +45,22 @@ public class BaseClass {
         } catch(InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    @Step
+    public void navigateToPage(String module) {
+        try{
+            driver.get(BASE_URL + module);
+        } catch(Exception e) {
+            driver.get("https://www.fairprice.com.sg/" + module);
+        }
+        log.info("Navigate to " + module + " successfully");
+    }
+
+    @Step
+    public void scrollToBottomPage() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight);");
     }
 
 }

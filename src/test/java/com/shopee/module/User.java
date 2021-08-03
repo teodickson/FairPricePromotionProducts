@@ -10,4 +10,5 @@ public class User {
     }
 
     public HomePage homepage() { return new HomePage(driver);}
+    public PromotionsPage promotionsPage() { return new PromotionsPage(driver);}
 }
