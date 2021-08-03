@@ -3,17 +3,14 @@ package com.shopee.feature;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
-import java.lang.reflect.Method;
-import java.sql.Driver;
 
 public class BaseTest {
     public WebDriver driver;
 
-    @BeforeClass
+    @BeforeTest
     public void beforeTestCase() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -21,7 +18,7 @@ public class BaseTest {
         driver.manage().window().fullscreen();
     }
 
-    @AfterClass
+    @AfterTest
     public void afterTestCase() {
         System.out.println("********************** TEST FINISHED **********************");
         System.out.println("*************** End to End Test Automation ****************");
