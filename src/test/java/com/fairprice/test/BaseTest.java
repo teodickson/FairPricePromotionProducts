@@ -1,6 +1,6 @@
-package com.shopee.feature;
+package com.shopee.test;
 
-import com.shopee.module.User;
+import com.shopee.page.User;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

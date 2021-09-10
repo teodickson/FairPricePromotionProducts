@@ -1,4 +1,4 @@
-package com.shopee.module;
+package com.shopee.page;
 
 import org.apache.log4j.Logger;
 import io.qameta.allure.Step;

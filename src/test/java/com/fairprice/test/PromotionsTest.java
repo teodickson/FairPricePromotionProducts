@@ -1,4 +1,4 @@
-package com.shopee.feature;
+package com.shopee.test;
 
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeMethod;

@@ -1,4 +1,4 @@
-package com.shopee.module;
+package com.shopee.page;
 
 import org.openqa.selenium.WebDriver;
 

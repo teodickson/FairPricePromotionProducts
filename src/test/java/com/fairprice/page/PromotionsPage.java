@@ -1,8 +1,5 @@
-package com.shopee.module;
+package com.shopee.page;
 
-import com.shopee.feature.BaseTest;
-import io.qameta.allure.Step;
-import net.bytebuddy.asm.Advice;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 
