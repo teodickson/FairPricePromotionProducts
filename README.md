@@ -1,2 +1,2 @@
 # FairPricePromotionProducts
-This is my very first program
+This is to scrape all the promotion products from SG Fairprice
