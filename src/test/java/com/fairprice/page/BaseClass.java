@@ -1,4 +1,4 @@
-package com.shopee.page;
+package com.fairprice.page;
 
 import org.apache.log4j.Logger;
 import io.qameta.allure.Step;
@@ -19,8 +19,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import static com.shopee.constant.Image.BASE_PATH;
-import static com.shopee.constant.Path.BASE_URL;
+import static com.fairprice.constant.Path.BASE_URL;
 
 public class BaseClass {
     public static WebDriver driver;
@@ -97,7 +96,7 @@ public class BaseClass {
 
     @Step
     public void runVisualTest(String testCase,ITestContext context) throws IOException {
-        String base = BASE_PATH + testCase + "/png";
+        String base = BASE_URL + testCase + "/png";
         String diff = "/screenshots/" + testCase + "_Diff.png";
         context.setAttribute("method",testCase);
         context.setAttribute("base",base);

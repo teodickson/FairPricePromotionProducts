@@ -1,4 +1,4 @@
-package com.shopee.constant;
+package com.fairprice.constant;
 
 public interface Path {
     String BASE_URL = "https://www.fairprice.com.sg/";

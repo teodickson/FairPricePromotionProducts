@@ -1,4 +1,4 @@
-package com.shopee.test;
+package com.fairprice.test;
 
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeMethod;
@@ -8,10 +8,10 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.List;
 
-import static com.shopee.constant.Image.*;
-import static com.shopee.constant.Path.*;
 
-public class PromotionsTest extends BaseTest{
+import static com.fairprice.constant.Path.*;
+
+public class PromotionsTest extends BaseTest {
     @BeforeMethod
     public void navigateToGivenPage() { user.promotionsPage().navigateToPage(PROMOTIONS);}
 

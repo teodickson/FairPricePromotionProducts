@@ -1,6 +1,6 @@
-package com.shopee.test;
+package com.fairprice.test;
 
-import com.shopee.page.User;
+import com.fairprice.page.User;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

@@ -1,4 +1,4 @@
-package com.shopee.page;
+package com.fairprice.page;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;

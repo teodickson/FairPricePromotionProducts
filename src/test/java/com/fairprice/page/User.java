@@ -1,4 +1,4 @@
-package com.shopee.page;
+package com.fairprice.page;
 
 import org.openqa.selenium.WebDriver;
 
@@ -9,6 +9,5 @@ public class User {
         this.driver = driver;
     }
 
-    public HomePage homepage() { return new HomePage(driver);}
     public PromotionsPage promotionsPage() { return new PromotionsPage(driver);}
 }
